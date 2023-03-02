@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background = "@drawable/gradient_color"
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/Profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/etFirstName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:textSize="20dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/etNewFirstName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="New First Name"
+                    android:inputType="textPersonName"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/etLastName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:textSize="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+                <EditText
+                    android:id="@+id/etNewLastName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="New Last Name"
+                    android:inputType="textPersonName"
+                    android:textSize="20dp"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/etAge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Age"
+                    android:inputType="textPersonName"
+                    android:textSize="20dp"
+                     />
+
+                <EditText
+                    android:id="@+id/etNewAge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="New Age"
+                    android:inputType="textPersonName"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnSaveToDatabase"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="12dp"
+android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="SAVE TO DATABSE"
+                    android:textSize="17dp"
+                    android:textStyle="normal"
+                     />
+
+                <Button
+                    android:id="@+id/btnUpdatePerson"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="Update Person"
+                    android:textSize="17dp"
+                    android:textStyle="normal"
+                   />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnRetrieveData"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:text="RETRIEVE DATA"
+                    android:textSize="17dp"
+
+                    />
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10dp"
+                    android:text="DELETE"
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnBatchWrite"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10dp"
+                        android:layout_weight="1"
+                    android:text="DO BATCHED WRITE"
+                    android:layout_gravity="center"
+                    android:textSize="17dp"/>
+
+                <Button
+                    android:id="@+id/btnTransaction"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="DO TRANSACTION"
+                    android:textSize="17dp"/>
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/PersonData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="PERSON DATA"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ivImage"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etTo"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+
+        <EditText
+            android:id="@+id/etFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Number"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:maxLength="5"
+            app:layout_constraintEnd_toStartOf="@+id/etTo"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Profile">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/etTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Number"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:maxLength="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/etFrom"
+            app:layout_constraintTop_toBottomOf="@+id/Profile">
+
+        </EditText>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
